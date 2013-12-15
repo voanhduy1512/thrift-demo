@@ -34,8 +34,10 @@ end
 gem 'thin'
 gem 'pry-rails'
 gem 'thrift', '0.9.1'
-gem 'massive_record', :git => "git@github.com:voanhduy1512/massive_record.git", :branch => "develop"
-gem 'massive_record'
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
